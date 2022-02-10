@@ -9,7 +9,7 @@ $stmt = $conn->prepare("SELECT * FROM links");
 $stmt->execute();
 // O Return da consulta dos dados será em um array associativo
 $result = $stmt->fetchAll();
-var_dump($result);
+// var_dump($result);
 
 ?>
 
