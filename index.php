@@ -32,24 +32,27 @@ var_dump($result);
 <body>
     <div>
         <h1>Listagem de links com QrCode</h1>
-        <?php 
+        <?php
         foreach ($result as $value) {
-            ?>
+        ?>
         <div class="links display">
             <div>
-                <span><?php echo $value['description']?></span>
-                <p><?php echo $value['link']?></p>
+                <span><?php echo $value['description'] ?></span>
+                <p><?php echo $value['link'] ?></p>
             </div>
-            <div id="qrcode<?php echo$value['id']?>">
+            <div id="qrcode<?php echo $value['id'] ?>">
 
             </div>
         </div>
         <!-- Criar QrCode através de um objeto do QrCode JS -->
         <script>
         // 1° Paramentro que cria o QrCode | 2° Param o link que sera codificado
-        var qrc = new QRCode(document.getElementById('qrcode', ''))
+        var qrc = new QRCode(document.getElementById('qrcode<?php echo $value['id'] ?>'),
+            '<?php echo $value['link'] ?>');
         </script>
-        </php } ?>
+        <?php
+        }
+        ?>
     </div>
 </body>
 
