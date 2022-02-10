@@ -3,3 +3,37 @@ body {
   color: #f0f0f0;
   font-family: "Source Code Pro", monospace;
 }
+
+.links {
+  background: #666;
+  margin: 0 108px 18px 108px;
+  padding: 32px;
+  border: 2px solid #333;
+  cursor: pointer;
+  border-radius: 32px;
+}
+
+.links:hover {
+  border: 2px solid #ce93d8;
+}
+
+h1 {
+  text-align: center;
+  color: #ce93d8;
+}
+
+.display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+p {
+  font-weight: medium;
+  font-size: 18px;
+}

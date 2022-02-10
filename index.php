@@ -33,7 +33,8 @@ var_dump($result);
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap"
         rel="stylesheet">
 
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
